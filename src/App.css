@@ -1,38 +1,166 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700&display=swap');
+
+body {
+  margin: 0;
+  background: rgb(135,67,86);
+  background: linear-gradient(129deg, rgba(135,67,86,1) 0%, rgba(198,93,123,1) 33%, rgba(246,137,137,1) 66%, rgba(246,231,216,1) 100%);
+  font-family: Lato;
+  letter-spacing: 1px;
+}
+
+.App{
+  height: 100lvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#wrapper{
+  width: 856px;
+  height: 432px;
+  background-color: rgba(255, 255, 255, .5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0px 3px 13px 6px rgba(10, 0, 39, 0.15);
+  display: flex;
+}
+
+#left-block{
+  width: 339px;
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.05);
+  border-radius: 10px;
+  box-shadow: -4px 3px 13px 6px rgba(10, 0, 39, 0.15);
+}
+
+.ensoleillé, .clair{
+  background: url(images/1.jpg) center no-repeat;
+}
+
+.pluie_légère, .pluie_modérée, .pluie_forte{
+  background: url(images/5.jpg) center no-repeat;
+}
+
+.partiellement_nuageux{
+  background: url(images/2.jpg) center no-repeat;
+}
+
+.brume{
+  background: url(images/4.jpg) center no-repeat;
+}
+
+.tonerre{
+  background: url(images/6.jpg) center no-repeat;
+}
+
+#bg-filter{
+  height: 100%;
+  background: #f36f031f;
+  color: white;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#bg-filter h1, #bg-filter p{
+  margin: 0;
+}
+
+#city-infos{
+  text-align: center;
+  padding-top: 30px;
+}
+
+#city-temperature{
+  padding-bottom: 30px;
+}
+
+#city-temperature p{
+  margin: 5px 0;
+}
+
+.svg-inline--fa:not(.fa-magnifying-glass){
+  font-size: 60px;
+}
+
+#temperature{
+  font-size: 42px;
+  font-weight: 900;
+}
+
+#right-block{
+  width: 517px;
+  padding: 40px;
+}
+
+.details{
+  display: flex;
+  justify-content: space-between;
+}
+
+#previsions{
+  height: 130px;
+  background-color: #f6e7d8;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 6px 13px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+}
+
+.prevision{
+  flex: 1;
+}
+
+.prevision:hover{
+  background-color: #874356;
+  transform: scale(1.1);
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 6px 13px 1px rgba(0, 0, 0, 0.15);
+}
+
+#search{
+  margin-top: 27px;
+  display: flex;
+  height: 35px;
+}
+
+#search input{
+  width: 80%;
+  border: none;
+  outline: none;
+  padding: 0 8px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#search button{
+  width: 20%;
+  height: 100%;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #F68989;
+  color: white;
+  cursor: pointer;
+}
+
+.details p:last-child{
+  font-weight: 900;
+}
+
+.prevision{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.prevision svg{
+  font-size: 30px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.prevdate{
+  font-size: 12px;
+  font-weight: 300;
 }
