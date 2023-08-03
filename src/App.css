@@ -38,7 +38,7 @@ body {
   background: url(images/1.jpg) center no-repeat;
 }
 
-.pluie_légère, .pluie_modérée, .pluie_forte{
+.pluie_légère, .pluie_modérée, .pluie_forte, .légère_pluie{
   background: url(images/5.jpg) center no-repeat;
 }
 
